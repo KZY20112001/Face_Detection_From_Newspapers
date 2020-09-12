@@ -115,6 +115,7 @@ def main():
                     face_list = create_face_list(index, bounding_boxes)
                     contact_sheet = create_contact_sheet(face_list)
                     contact_sheet.save("result for file {0}".format(img_name[index])) #save the contact sheet as another file
+        print("Finished searching!")                   
     except:
         print("Error at index {0}".format(index))
 
